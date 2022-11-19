@@ -7,15 +7,15 @@ import {elementMatches, repeatTheCycle, breakTheFlow} from './helpers'
 function Slider(
 {
    data,
-   pagination = false,
    width,
    height,
-   current = 0, // The index of the slide to select initially.
+   pagination = false,
+   initial = 0, // The index of the slide to select initially.
    repeat = false,
    keyHandling = false
 }
 ) {
-   const [currentIndex, setCurrentIndex] = useState(current);
+   const [currentIndex, setCurrentIndex] = useState(initial);
    const [inFocus, setInFocus] = useState(false);
    const sliderElement = useRef();
 
