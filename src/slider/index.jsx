@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useCallback, useRef} from 'react';
-import Slide from './slide';
-import Pagination from './pagination';
-import Navigation from './navigation';
+import Slide from './Slide';
+import Pagination from './Pagination';
+import Navigation from './Navigation';
 import {elementMatches, repeatTheCycle, breakTheFlow} from './helpers'
 
 function Slider(
